@@ -1,4 +1,55 @@
-//header manipulation
+// //header manipulation
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navItems = document.querySelectorAll(".nav-item.has-drop");
+//   const dropdown = document.querySelector(".dropdown");
+
+//   // Function to detect if the code is running on GitHub Pages
+//   function isGitHubPages() {
+//       return window.location.hostname.includes('github.io');
+//   }
+
+//   // Base path for GitHub Pages and local
+//   const basePath = isGitHubPages() ? "/Story-creator" : "."; 
+//   // Adjusted paths for GitHub Pages and local
+//   const chapterLinks = {
+//       3: [
+//           { text: "Chapter1", href: `${basePath}/chapter1.html` },
+//           { text: "Chapter2", href: `${basePath}/chapter2.html` },
+//           { text: "Chapter3", href: `${basePath}/chapter3.html` },
+//           { text: "Chapter4", href: `${basePath}/chapter4.html` },
+//           { text: "Chapter5", href: `${basePath}/chapter5.html` },
+//           { text: "Chapter6", href: `${basePath}/chapter6.html` },
+//           { text: "Chapter7", href: `${basePath}/chapter7.html` },
+//           { text: "Chapter8", href: `${basePath}/chapter8.html` },
+//       ],
+//   };
+
+//   navItems.forEach((item) => {
+//       item.addEventListener("click", function (event) {
+//           event.stopPropagation();
+//           const chapterId = this.getAttribute("data-chapter");
+//           const links = chapterLinks[chapterId];
+
+//           if (!links) return;
+
+//           dropdown.innerHTML = links
+//               .map((link) => `<a href="${link.href}">${link.text}</a>`)
+//               .join("");
+
+//           const rect = this.getBoundingClientRect();
+//           dropdown.style.left = `${rect.left}px`;
+//           dropdown.style.top = `${rect.bottom + window.scrollY}px`;
+//           dropdown.style.display = "block";
+//       });
+//   });
+
+//   document.addEventListener("click", function (event) {
+//       if (!dropdown.contains(event.target)) {
+//           dropdown.style.display = "none";
+//       }
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
   const navItems = document.querySelectorAll(".nav-item.has-drop");
   const dropdown = document.querySelector(".dropdown");
@@ -10,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Base path for GitHub Pages and local
   const basePath = isGitHubPages() ? "/Story-creator" : "."; 
+  
   // Adjusted paths for GitHub Pages and local
   const chapterLinks = {
       3: [
@@ -49,7 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
-
 
 //project
 const saveButton = document.getElementById('save-story');
