@@ -9,18 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Base path for GitHub Pages and local
-  const basePath = isGitHubPages() ? "/Story-creator" : ""; 
+  const basePath = isGitHubPages() ? "/Story-creator" : "."; 
   // Adjusted paths for GitHub Pages and local
   const chapterLinks = {
       3: [
-          { text: "Chapter1", href: `${basePath}/Html/chapter1.html` },
-          { text: "Chapter2", href: `${basePath}/Html/chapter2.html` },
-          { text: "Chapter3", href: `${basePath}/Html/chapter3.html` },
-          { text: "Chapter4", href: `${basePath}/Html/chapter4.html` },
-          { text: "Chapter5", href: `${basePath}/Html/chapter5.html` },
-          { text: "Chapter6", href: `${basePath}/Html/chapter6.html` },
-          { text: "Chapter7", href: `${basePath}/Html/chapter7.html` },
-          { text: "Chapter8", href: `${basePath}/Html/chapter8.html` },
+          { text: "Chapter1", href: `${basePath}/chapter1.html` },
+          { text: "Chapter2", href: `${basePath}/chapter2.html` },
+          { text: "Chapter3", href: `${basePath}/chapter3.html` },
+          { text: "Chapter4", href: `${basePath}/chapter4.html` },
+          { text: "Chapter5", href: `${basePath}/chapter5.html` },
+          { text: "Chapter6", href: `${basePath}/chapter6.html` },
+          { text: "Chapter7", href: `${basePath}/chapter7.html` },
+          { text: "Chapter8", href: `${basePath}/chapter8.html` },
       ],
   };
 
